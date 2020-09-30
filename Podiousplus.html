@@ -1,0 +1,1040 @@
+<!doctype>
+<html>
+  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    
+
+
+	    <title>Podious plus</title>
+	    		<link href='http://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300' rel='stylesheet' type='text/css'>
+	    <!-- Flaticon CSS -->
+	    <link href="fonts/flaticon/flaticon.css" rel="stylesheet">
+	    <link href="css/font-awesome.min.css" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" href="cs/font-awesome/css/fontawesome.min.css">
+	   <link rel="stylesheet" href="css/base.css">
+      
+
+	   
+  </head>
+<style type="text/css">
+
+	html{
+		font-size: 16px;
+		overflow-x: hidden;
+	}
+	a:not(.sn){
+		text-decoration: none;
+		padding:1.1em;
+		
+	}
+    .row{
+    	margin: auto;
+    	text-align: center;
+    	width:80vw;
+    	display: grid;
+    	grid-template-columns: repeat(2,1fr);
+    	grid-gap: 5%;
+       	height: 100vh;
+    	
+    }
+    
+	*{
+
+		font-family: arial;
+		margin:0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	ul li{
+		list-style-type: none;
+		
+	}
+	/*process section*/
+	#wp{
+		[padding-top: 1.5em]
+	}
+	#process {
+		height:125vh;
+		width:100%;
+	}
+	.top-img{
+		display: inline-block;
+		width:300px;
+		height:200px;
+
+	}
+	#process h1{
+		margin-top: 5px;
+		text-align: center;
+		height: 1.1em;
+	}
+	#process p{
+
+
+		text-align: center;
+		display: inline-block;
+     width:20%;
+     border-bottom: 10px solid #955;
+	}
+	#fp{
+		border-radius: 0 0 0px 50px;
+		position: relative;
+		left: -30%;
+		top:50px;
+	}
+	#sp{
+		border-radius: 0 0 50px 0;
+		position: relative;
+		left: 0%;
+		top:50px;
+	}
+	#tp{
+	border-radius: 0 0 0px 50px;
+		position: relative;
+		left: -27%;
+		top:100px;
+	
+	}
+	#fop{
+		border-radius: 0 0 50px 0;
+		position: relative;
+		left: -2%;
+		top:100px;
+	
+	}
+		.bottom-img{
+		display: inline-block;
+		width:300px;
+		height:200px;
+
+	}
+	#process img{
+		opacity: .7;
+		object-fit: cover;
+		width:350px;
+		height:300px;
+		transition:1s;
+		overflow: hidden;
+	}
+	#process img:hover{
+		opacity: 1;
+	    transform: scale(1.1);
+	    transition: 1s;
+	}
+	#fimg{
+     position: relative;
+     top:20;
+     left: 12%;
+	}
+	#simg{
+     position: relative;
+     top: 20;
+     left:40%;
+	}
+	#timg{
+     position:relative;
+     top:70;
+     left:15%;
+	}
+	#foimg{
+  position:relative;
+  top:70;
+  left:37%;
+	}
+	#strike{
+		width:200px;
+		height:10px;
+		position: relative;
+		left:15px;
+		top:10px;
+		background-color: #955;
+		opacity: .85;
+	}
+	/*sidbar*/
+	#newli{
+		height: 100vh;
+	}
+	#side ul li{
+		 width:40vw;
+      height: 15vh;
+      
+     	}
+	.nav-di ul li a{
+		transition:.5s;
+		display: block;
+		text-align: center;
+           display: block;
+           padding: 2em;
+      width:100%;
+      height: 100%;
+      font-size: 1.3em;
+      text-decoration: none; 
+      color:#955;
+	}
+	.sn:hover{
+		transition:.5s;
+		background-color: #955;
+		color:white;
+	}
+
+	.nav-di{
+		position: fixed;
+		right: 0;
+		top: 34;
+		width:0;
+		transition:1s;
+
+
+	}
+
+	.nav-d{
+		z-index: 1;
+		position: fixed;
+		right: 0;
+		top: 34;
+		width:40vw;
+		height: 100vh;
+		background-color: white;
+			transition:1s;
+	}
+	/*sidebar stop*/
+	/*top nav start*/
+	.header{
+		z-index: 3;
+		position: fixed;
+		top:0;
+		left:0;
+		right:100vw;
+		width:100vw;
+		background-color: white;
+		transition:0s;
+	}
+	.header,.navbar-header{
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-right: 10px;
+	}
+	.nav{
+		display: flex;
+		list-style-type: none;
+		align-items: center;
+		align-self: center;
+	}
+	
+	
+	.logo,.logo a{
+		position: relative;
+		font-family:"Brush Script MT";
+		align-self: center;
+		font-style: ;
+		color:purple;
+		padding:.1em;
+		padding-left: .5em;
+		background-color: white;
+	}
+	#logo{
+		font-family:CopperPlate ;
+		color:purple;
+
+	}
+
+	nav li a:hover{
+		background-color: #955;
+		color: white;
+		transition:1s;
+	}
+	
+	/*services*/
+	
+.container{
+	position: relative;
+	left: 0;
+	bottom: 0;
+}
+.carousel-caption{
+	position:absolute;
+	color: white;
+	left: 6%;
+	bottom: 2%;
+	padding: 1.1em;
+	background-color: rgba(0,0,0,.3);
+
+
+}
+#item img{
+	width:100vw;
+
+}
+#item{
+	
+}
+img{
+	padding-top:6px;
+}
+.carousel-caption p,.carousel-caption h1{
+  margin-bottom: 5%;
+}
+.carousel-caption a{
+ padding: 1.4em;
+ border-radius: 10px;
+ border:2px solid crimson;
+ padding: 1.1em;
+ color: white;
+ display:block;
+ width:200px;
+ text-align: center;
+ transition: .4s;
+}
+.carousel-caption a:hover{
+	transition: 1s;
+	background-color: crimson;
+ padding: 1.4em;
+ border-radius: 10px;
+ padding: 1.1em;
+ color: white;
+ display:block;
+ width:200px;
+ text-align: center;
+}
+i{
+	color: rgba(0,0,200,.5);
+	font-size: 2.99em;
+	transition: 1s;
+}
+i:hover{
+	color: lightblue;
+	font-weight: bolder;
+	font-size: 3.2em;
+	transition: 1s;
+}
+.services{
+	color: #332;
+	margin: auto;
+	margin-bottom: 4%;
+	width: 80vw;
+	text-align: center;
+}
+
+
+.services p{
+
+	margin:auto;
+	width:80%;
+}
+.media-left{
+	text-align: center;
+	display:block;
+	margin:auto;
+}
+.row .col{
+	height:250px;
+	margin-bottom: 4%;
+	padding: 1.3em;
+	box-shadow: 2px 2px 8px 2px #eee,-2px -2px 8px 2px #eee;
+	background-color: #f8fdd9;
+	border-radius: 14px;
+
+}
+#services{
+	margin-top: 3%;
+	width:100%;
+	height: 110vh;
+	
+}
+/*contact section*/
+    #hand{
+       	margin-top:24px;
+    	color:#955;
+    	text-align: center;
+    }
+     #hand i{
+    	
+    	margin-top:24px;
+    	color:#955;
+    	text-align: center;
+    	font-size: 20vh;
+    }
+
+.subhead-cont{
+  font-size: 2em;
+  padding-top: 12%;
+  color: rgba(50,3,3,.7);
+}
+.display-1{
+	margin:auto;
+	width:80vw;
+	font-size: 3em;
+	margin-top: 1%;
+
+}
+.first-cont-section{
+    	text-align: center;
+    	margin-top: 4%;
+    	width:100vw;
+    	height: 100vh;
+    	background-color: rgba(10,5,5,.1);
+    	color:#955;
+    }
+    #cover{
+    	border:2px solid black;
+    	margin-bottom: -500px;
+    	height: 100vh;
+    	width:100vw;
+    	background-color: black;
+    }
+    .contact-main p{
+      background-color: black;
+      margin-top: 4%;
+
+    }
+    .contact-main p{
+      background-color: black;
+      
+    }
+    .contact-email{
+    	font-size: 3em;
+    	color: #955;
+
+    	
+    	
+    }
+    .contact-number{
+    	font-size: 2em;
+    	color:white;
+    }
+    .contact-secondary{
+      color:white;
+      margin-top: 4%;
+
+
+    }
+    .contact-secondary p,.contact-secondary h3{
+      text-align: center;
+            margin-top: 2%;
+
+    }
+    .sub-contact{
+      font-size: 2em;
+      color: #955;
+    }
+    .contact-address{
+       font-size: 2em;
+    }
+    #mc-email{
+    	width:25vw;
+    	height: 40px;
+    	padding-left: 3%;
+    	margin-left: 10%;
+    }
+    [type="submit"]{
+    	height: 40px;
+    	background-color: red;
+    	color:white;
+    	padding-left:1.3em;
+    	padding-right:1.3em;
+
+    	border:none;
+    	text-align: center;
+    }
+    .contact-sec{
+    	margin-top: 7%;
+    	background-color: black;
+    }
+    .mc-form{
+     width: 50vw;
+     margin-top: 4%;
+    
+    }
+    .contact-sec{
+    	text-align: center;
+    	display: flex;
+    	color: #955;
+    }
+    #social{
+    	width: 50vw;
+    }
+    #social ul{
+        	display: flex;
+        	justify-content: center;
+        	margin-top: 4%;
+        	margin-bottom:4vh;
+    }
+        #social ul li{
+
+        	list-style-type: none;
+    }
+     #social ul li i{
+        	list-style-type: none;
+        	color:#555;
+            }
+    #social ul li i:hover{
+        	color:#ccc;
+    }
+    #social ul li a{
+    		    		padding-bottom: .1em;
+    }
+     #social ul li a:hover{
+        	background-color:black;
+    }
+    }
+    /*sidebar*/
+    .subhead-s{
+    	font-size: 2em;
+    }
+    #hamburger{
+    	position: fixed;
+    	right:10;
+    	top:10;
+
+    	    }
+    	    .rotate-top{
+    	    z-index: 2;
+               transform: translateY(10px) rotateZ(45deg);
+               transition:.5s;
+    	    }
+    	    .rotate-bottom{
+              z-index: 2;
+               transform: translateY(-10px) rotateZ(-45deg);
+               transition:.5s;
+
+    	    }
+    	    #hamburger{
+    	    	visibility: hidden;
+    	    }
+    .ham{
+
+    	z-index: 3
+    	border-radius: 4px;
+    	height: 6px;
+    	width:30px;
+    	background-color:#955;
+    }
+    #first{
+    	position: relative;
+    	top:-4px;
+    	transition:.5s;
+    	border-radius: 5px;
+    }
+    #third{
+    	position: relative;
+    	top:4px;
+    	  transition:.5s;
+    	  border-radius: 8px;
+    }
+    #second{
+    	border-radius: 8px;
+    }
+    .hide{
+    
+    	visibility: hidden;
+    	transition:.8s;
+
+    }
+     #mail{
+    	display: flex;
+    	flex-direction: row;
+    	align-items:center;
+    }
+    @media (max-width:1250px){
+    	#process{
+    		display: none;
+    		height: 0;
+    		transition:.3s;
+    	}
+    }
+    @media (max-width:900px){
+    	
+    	    #mail{
+    	display: flex;
+    	flex-direction: column;
+    }
+    #services{
+    	height: 130vh;
+    }
+    .row .col{
+	height:300px;
+	margin-bottom: 4%;
+	padding: 1.3em;
+	box-shadow: 2px 2px 8px 2px #eee,-2px -2px 8px 2px #eee;
+	background-color: #f8fdd9;
+	border-radius: 14px;
+
+}
+    }
+
+    @media (max-width: 600px){
+
+.item{
+	height: 80vh;
+
+}
+#item img{
+width:120vw;
+	height: 80vh;
+}
+.carousel-caption p,
+.carousel-caption h1{
+  font-size: .95em;
+  margin-bottom: 2%;
+}
+	
+.carousel-caption{
+	
+	position:absolute;
+	color: white;
+	left: 0;
+	right: 0;
+	bottom: 2%;
+	padding: 1em;
+	background-color: rgba(0,0,0,.3);
+
+
+}
+    	#hamburger{
+    		visibility: visible;
+    	}
+    	nav{
+    		visibility: hidden;
+    	}
+    	.row{
+    		margin-top: 2%;
+    	margin: auto;
+    	text-align: center;
+    	width:80vw;
+    	display: grid;
+    	grid-template-columns: repeat(1,1fr);
+    	grid-gap: 1px;
+       	height: 90%;
+    	    }
+    	    
+	
+
+
+    	#services{
+    	margin-top: 3%;
+	width:100%;
+	height: 250vh;
+}
+
+.row .col{
+	height: 250px;
+	margin-bottom: 1px;
+	padding: 1.3em;
+	box-shadow: 2px 2px 8px 2px #eee,-2px -2px 8px 2px #eee;
+
+}
+.subhead-cont{
+  font-size: 1em;
+  padding-top: 32%;
+  color: rgba(50,3,3,.7);
+}
+.first-cont-section{
+    	text-align: center;
+    	margin-top: 4%;
+    	width:100vw;
+    	height: 100vh;
+    	background-color: rgba(10,5,5,.1);
+    	color:#955;
+    }
+
+.display-1{
+	margin:auto;
+	width:80vw;
+	font-size: 2em;
+	margin-top: 1%;
+
+}
+
+.contact-email{
+
+    	font-size: 1.5em;
+    	color: #955;
+
+    	
+    	
+    }
+    .contact-number{
+    	font-size: 1em;
+    	color:white;
+    }
+     .sub-contact{
+      font-size: 1.5em;
+      color: #955;
+    }
+    .contact-address{
+       font-size: 1em;
+    }
+     .contact-sec{
+    	text-align: center;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	color: #955;
+    	justify-content: space-around;
+
+    }
+   
+   #mc-form{
+   	align-self:center;
+    padding-top: 1.2em;
+   	display: block;
+   	width:100vw;
+   	margin:auto;
+   }
+   #mc-mail{
+   	margin-top: 3%;
+   	}
+   .contact-subscribe{
+   	padding-top: 4em;
+   }
+   #mc-email{
+    	width:40vw;
+    	height: 40px;
+    	padding-left: 3%;
+    	margin-left: 10%;
+    }
+    #mail{
+    	display: flex;
+    	flex-direction: column;
+    }
+
+[type="submit"]{
+        margin-right:50px;
+      }
+
+
+    }
+</style>
+<body>
+	<header class="header">
+		<div id="hamburger">
+			<div id="first" class="ham"></div>
+			<div id="second" class="ham"></div>
+			<div id="third" class="ham"></div>
+		</div>
+		            <div class="navbar-header">
+		                        
+					  <h1 class="logo">
+					  	<a class="navbar-brand" href="index.html"><span id="logo">PP</span>soft</a>
+					  </h1>
+					</div>
+
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="contain">
+
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="nav-div">
+								<ul class="nav">
+									<li><a  href="#home">Home</a></li>
+									<li><a href="#services">Services</a></li>
+									<li><a href="#work">Works</a></li>
+									<li><a  href="#about">About</a></li>
+									
+									<li><a class="page-scroll" href="#contact">Contact</a></li>
+								</ul>
+							</div><!-- /.navbar-collapse -->
+						</div><!-- /.container -->
+					</nav>
+
+				</header>
+							<div id="side" class="nav-di">
+								<ul id="newli">
+									<li><a class="sn" href="#home">Home</a></li>
+									<li><a class="sn" href="#services">Services</a></li>
+									<li><a class="sn" href="#work">Works</a></li>
+									<li><a class="sn" href="#about">About</a></li>
+									
+									<li><a class="sn" href="#contact">Contact</a></li>
+								</ul>
+							</div>
+	<section id="carousel">
+		 <div class="carousel-inner">
+				        <div class="item">
+				        	<div id="item">
+				              <img src="img/slider/img1.jpg" alt="Hero Slide">
+				           </div>
+				            <!--Slide Image-->
+
+				            <div class="container">
+				                <div class="carousel-caption">
+				                    <h1 class="animated">Creative Ideas &amp; Solutions</h1>
+
+				                    <p class="lead animated lightSpeedIn">Energistically benchmark resource maximizing catalysts for change with <br> enterprise collaboration and idea-sharing. Dramatically evisculate.</p>
+
+				                    <a class="btn btn-default" href="#">Get Started</a>
+				                </div>
+				                <!--.carousel-caption-->
+
+				            </div>
+				            <!--.container-->
+				        </div>
+
+				    </div>
+		
+	</section>
+
+
+
+	<section id="services">
+	    <div class="services">
+		 <h2 class="section-title wow zoomIn">What We Do</h2>
+		  </div>
+		 <div class="row">
+
+		               <!-- /.row -->
+
+		                
+		                <div class="col">
+		                  <div class="media">
+
+		                    <a class="media-left" href="#">
+		                      <i class="flaticon-window22"></i>
+		                    </a>
+
+		                    <div class="media-body">
+		                      
+                                   <h3 class="media-heading">
+                                     Web Design & App Development
+                                   </h3>
+		                      <p>We create responsive websites and dynamic apps that connect your costumers to you and your products</p>
+
+		                    </div> <!-- /.media-body -->
+		                  </div> <!-- /.media -->
+		                </div> <!-- /.col-sm-6 -->
+
+
+		                <div class="col">
+		                  <div class="media">
+		                    <a class="media-left" href="#">
+		                      <i class="flaticon-bulb11"></i>
+		                    </a>
+
+		                    <div class="media-body">
+		                      
+                               <h3 class="media-heading"> Graphic Design</h3>
+		                      <p>We all want to make a good first impression, and hopefully a lasting one too! By understanding your company’s audience, values and goals, we produce logo designs.</p>
+
+		                    </div> <!-- /.media-body -->
+		                  </div> <!-- /.media -->
+		                </div> <!-- /.col-sm-6 -->
+
+		                
+
+
+		                <div class="col">
+		                  <div class="media">
+
+		                    <a class="media-left" href="#">
+		                      <i class="flaticon-speaker30"></i>
+		                    </a>
+
+		                    <div class="media-body">
+		                      <h3 class="media-heading">Digital Marketing & SEO</h3>
+		                      <p>Accelerate your companies growth by ranking your website and increase your online audience</p>
+
+		                      
+		                    </div> <!-- /.media-body -->
+		                  </div> <!-- /.media -->
+		                </div> <!-- /.col-sm-6 -->
+
+
+		                 <div class="col">
+		                  <div class="media">
+
+		                    <a class="media-left" href="#">
+		                      <i class="flaticon-bars6"></i>
+		                    </a>
+
+		                    <div class="media-body">
+		                      <h3 class="media-heading">Data management</h3>
+		                      <p>we create valuble data resource for your organisation and increased productivity</p>
+
+		                      
+		                    </div> <!-- /.media-body -->
+		                  </div> <!-- /.media -->
+		                </div> <!-- /.col-sm-6 -->
+
+		              <!-- /.container -->
+		          </div> <!-- /.row -->
+
+		             
+		
+	</section>
+	<section id="process">
+		<div id="strike"></div>
+		 <h1 id="wp"> Our Working process</h1>
+		<div class="top-img" id="fimg">
+			<img src="img/slider/working1.jpg" alt="">
+		</div>
+		<div class="top-img" id="simg">
+			<img src="img/slider/working2.jpg" alt="">
+		</div>
+		<p id="fp">Meetup</p> <p id="sp"> Extensive research</p>
+		<br/>
+		<div class="bottom-img" id="timg">
+			<img src="img/slider/img6.jpg" alt="">
+		</div>
+		
+		<div class="bottom-img" id="foimg">
+			<img src="img/slider/working3.jpg" alt="">
+		</div>
+		<p id="tp">Generate ideas</p><p id="fop">Get job done</p>
+	</section>
+	  <section id="contact" class="s-contact">
+
+        <div class="first-cont-section">
+            <div class="c-full">
+                <h3 class="subhead-cont">\Contact Us</h3>
+                <h1 class="display-1">Get in touch and let's make something great together. Let's turn your idea on an even greater product.</h1>
+            </div>
+           <div id="hand">
+           	 <i class="fas fa-handshake"></i>
+           </div>
+        </div> <!-- end section-header -->
+       <div id="cover">
+        
+
+            <div class=" contact-main">
+                <div id="mail">
+                <a href="#" class="contact-email">Podiousplus@gmail.com</a>
+                <span class="contact-number">+234 903 267 2139   /  +234 813 554 1909</span>
+                </div>
+            </div> <!-- end contact-main -->
+
+  
+    
+            <div class="contact-secondary">
+                <h3 class="sub-contact">Where To Find Us</h3>
+
+                <p class="contact-address">
+                    1600 Amphitheatre Parkway<br>
+                    Abakpa Nike Enugu<br>
+                    NG
+                </p>
+            </div> <!-- end contact-secondary -->
+
+            <div class="contact-sec">
+            	<div id="social">
+                <h3 class="subhead-s">Follow Us</h3>
+
+                <ul class="contact-social">
+                    <li>
+                        <a href="#0"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-instagram"></i></a>
+                    </li>
+                   
+                </ul> <!-- end contact-social -->
+            </div>
+               
+                <div class="contact-subscribe">
+                	 <h3 class="subhead-s">Subscribe to our newsletter</h3>
+                    <form id="mc-form" class="group mc-form" novalidate="true">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                        <input type="submit" name="subscribe" value="Subscribe">
+                        
+                    </form>
+                </div> <!-- end contact-subscribe -->
+            </div> <!-- end contact-secondary -->
+
+        </div> <!-- end row -->
+     </div>
+    </section> <!-- end s-contact -->
+    //gsap cdn
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    //scroll magic cdn
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+//scroll reveal cdn
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+<script >
+
+	let hm=document.querySelector('#hamburger');
+	let first=document.querySelector('#first');
+	let second=document.querySelector('#second');
+	let third=document.querySelector('#third');
+	let sidebar=document.querySelector('.nav-di');
+	var check=false;
+    var tl=gsap.timeline({
+    	scrollTrigger:'#process',
+    	start:'top'
+    });
+    
+    //scrollReveal
+    window.sr=new ScrollReveal()  
+    sr.reveal('.col',{delay:200,duration:2000,origin:'right',easing:'ease-in-out'});
+    //gsap
+    tl.from('#fimg',{duration:1,x:-100,opacity:0});
+    tl.from('#simg',{duration:1,x:100,opacity:0},'-=1');
+    tl.from('#timg',{duration:2,x:-100,opacity:0});
+    tl.from('#foimg',{duration:2,x:100,opacity:0},'-=2');
+     
+
+    //scrollMgic
+
+ //javascript code
+ window.addEventListener('scroll',()=>console.log(first.scrollHeight))
+	hm.addEventListener('click',()=>{
+		if(!check){
+            check=true;
+		first.classList.add('rotate-top');
+		second.classList.add('hide');
+		third.classList.add('rotate-bottom');
+		sidebar.classList.add('nav-d');
+
+	}else{
+        check=false;
+        first.classList.remove('rotate-top');
+		second.classList.remove('hide');
+		third.classList.remove('rotate-bottom');
+		sidebar.classList.remove('nav-d');
+	}
+
+	})
+	var lastScroll=0;
+  //header hide on scrolldown
+	window.addEventListener('scroll',()=>{
+		
+		var scrolled=window.pageYOffset;
+     if(window.pageYOffset>=document.querySelector('.header').offsetHeight&&scrolled-lastScroll>0){
+       
+            document.querySelector('.header').style.visibility='hidden';
+            lastScroll=scrolled;
+        }else{
+
+            document.querySelector('.header').style.visibility='visible';
+                      lastScroll=scrolled;
+             }
+
+       })
+
+</script>
+
+</body>
+	    <script src="js/jquery.js"></script>
+	    <!-- Bootstrap Core JavaScript -->
+	    <script src="js/bootstrap.min.js"></script>
+	    <!-- wow.min.js -->
+	    
+		<!-- inview -->
+		<script src="js/jquery.inview.min.js"></script>
+		<!-- stellar -->
+		<script src="js/jquery.stellar.js"></script>
+		<!-- countTo -->
+		
+		<!-- flickerPhoto -->
+			    <!-- GOGLE MAP -->
+	    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+</html>
