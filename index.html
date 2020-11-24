@@ -46,6 +46,10 @@
 		margin:0;
 		padding: 0;
 		box-sizing: border-box;
+		
+	}
+	body{
+		overflow-x: hidden;
 	}
 	ul li{
 		list-style-type: none;
@@ -267,11 +271,12 @@
 
 }
 #item img{
-	width:100vw;
+	object-fit: contain;
 
 }
 #item{
-	
+	width:100vw;
+	height:80vh;
 }
 img{
 	padding-top:6px;
@@ -574,7 +579,6 @@ i:hover{
 
 }
 #item img{
-width:120vw;
 	height: 80vh;
 }
 .carousel-caption p,
